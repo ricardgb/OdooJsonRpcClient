@@ -182,6 +182,11 @@ namespace PortaCapena.OdooJsonRpcClient.Converters
                 case OdooValueTypeEnum.Html:
                     return "string";
 
+                case OdooValueTypeEnum.PropertiesDefinition:
+                case OdooValueTypeEnum.Properties:
+                
+                    return "string";
+
                 case OdooValueTypeEnum.Boolean:
                     return property.Value.ResultRequired ? "bool" : "bool?";
 
